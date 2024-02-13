@@ -1,0 +1,94 @@
+:root {
+  --dark-blue: #27374d;
+  --blue: #526d82;
+  --light-blue: #9db2bf;
+  --white-blue: #dde6ed;
+
+  --cursive: "Bad Script", cursive;
+  --sans: "Noto Sans", sans-serif;
+}
+
+.hero,
+.footer {
+  background: linear-gradient(
+    300deg,
+    var(--dark-blue),
+    var(--blue),
+    var(--light-blue)
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.personal-image {
+  border-radius: 50%;
+  height: auto;
+  width: 100%;
+}
+
+.display-5 {
+  font-family: var(--cursive);
+  letter-spacing: 3px;
+}
+
+.lead {
+  font-family: var(--sans);
+}
+
+.feature-title {
+  font-family: var(--sans);
+  color: var(--light-blue);
+}
+
+.card-title {
+  font-family: var(--cursive);
+  color: var(--blue);
+  text-align: center;
+}
+
+.card-text {
+  font-family: var(--sans);
+  color: var(--light-blue);
+  text-align: center;
+}
+
+.about-me-title {
+  font-family: var(--cursive);
+  color: var(--blue);
+}
+
+.abt-me-text {
+  font-family: var(--sans);
+  color: var(--light-blue);
+  max-width: 400px;
+}
+
+.card {
+  border-color: var(--light-blue);
+  border-width: 5px;
+}
+
+@media (min-width: 800px) {
+  .contact-con {
+    max-width: 90%;
+  }
+}
+
+.con-txt {
+  font-family: var(--cursive);
+  color: var(--light-blue);
+  letter-spacing: 5px;
+  font-weight: bold;
+}
